@@ -1,0 +1,21 @@
+ 
+
+.imageUploadErr{
+    color: #d9534f;
+    border-bottom: 1px dashed;
+    display: inline-block;
+    line-height: normal;
+}
+.successText{
+    color: green;
+    font-weight: bolder;
+    padding: 1.5rem
+}
+.errorTxt{
+    color: red;
+    font-weight: bolder;
+    padding: 1.5rem
+}
+.smallBtn{
+ width:50;
+} 

@@ -1,0 +1,20 @@
+import { createStore, applyMiddleware } from 'redux'
+import { composeWithDevTools } from 'redux-devtools-extension'
+import logger from 'redux-logger'
+import thunk from 'redux-thunk'
+// import { getState, saveState } from  './localStorage'
+// import {fetchItems} from '../redux/itemList/itemListActions'
+
+import rootReducer from './rootReducer'
+//const initialState = getState()
+const store = createStore(
+    rootReducer,
+    composeWithDevTools(applyMiddleware(logger, thunk))
+)
+// store.dispatch(fetchItems())
+// store.subscribe(() => {
+//   saveState({
+//       items: store.getState().items,
+//   })
+// })
+export default store
